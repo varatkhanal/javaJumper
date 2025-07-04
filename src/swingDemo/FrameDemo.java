@@ -74,11 +74,8 @@ public class FrameDemo implements ActionListener{
 	}
 	
 	
-	
-	public static void main(String[] args) {
-		
-		new FrameDemo();
-		
+	public static void main(String[] args) {		
+		new FrameDemo();		
 	}
 
 
@@ -93,8 +90,7 @@ public class FrameDemo implements ActionListener{
 			String userName = txtUser.getText().toString();
 			String password = txtPass.getText().toString();
 			
-			//write to a file
-			
+			//write to a file		
 			try {
 				BufferedWriter bw = new BufferedWriter(new FileWriter("E:\\jumper_cred.txt",true));
 				bw.write(userName+" "+password+"\n");
@@ -130,7 +126,9 @@ public class FrameDemo implements ActionListener{
 					}
 				}
 				if(validate) {
-					JOptionPane.showMessageDialog(null,"Login Successfully");
+					
+					DashBoard db = new DashBoard();
+					//JOptionPane.showMessageDialog(null,"Login Successfully");
 				}else {
 					JOptionPane.showMessageDialog(null,"Username or Password didn't match");
 				}
