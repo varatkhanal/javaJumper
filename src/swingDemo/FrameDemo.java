@@ -42,24 +42,26 @@ public class FrameDemo implements ActionListener{
 		
 		txtUser = new JTextField();
 		txtUser.setBounds(250,40,200,40);
+		txtUser.setFont(font);
 		
 		txtPass = new JTextField();
 		txtPass.setBounds(250,90,200,40);
+		txtPass.setFont(font);
 		
 		
 		btnRegister = new JButton("Register");
 		btnRegister.setBounds(40,140,200,40);
 		btnRegister.setFont(font);
+		btnRegister.setBorderPainted(false);
 		
 		btnLogin = new JButton("Login");
 		btnLogin.setBounds(250,140,200,40);
 		btnLogin.setFont(font);
-		
-		
+		btnLogin.setBorderPainted(false);
+				
 		btnRegister.addActionListener(this);
 		btnLogin.addActionListener(this);
-		
-		
+				
 		frame.add(label_one);
 		frame.add(txtUser);
 		frame.add(label_two);
